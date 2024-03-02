@@ -1,0 +1,176 @@
+
+body {
+  background-color:#f3f5fc;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura completa de la ventana */
+}
+
+.contenedor {
+  flex: 1; /* Esto permite que el contenedor principal crezca para ocupar el espacio disponible */
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  margin-top: auto; /* Esto ayuda a que el footer se adhiera al fondo */
+  height: 70px;
+  width: 100%;
+}
+
+header {
+  background-color: #f3f5fc;
+  padding: 0;
+  position: relative;
+}
+
+.caja {
+  height: 70px; /* Ajusta la altura de la barra según sea necesario */
+  display: flex;
+  align-items: center;
+}
+
+.imagen1 {
+  width: 90px;
+  height: auto; /* Hace que la altura sea proporcional al ancho */
+  margin: 0 0 0 30px;
+}
+
+/* Ajuste para mantener la imagen dentro de la barra al hacer zoom */
+@media (max-width: 768px) {
+  .imagen1 {
+    margin: 0 0 0 10px; /* Ajusta el margen para mantener la imagen dentro de la barra */
+  }
+}
+
+.mensaje{
+  width: 50%;
+  height: 60vh;  
+  background-color: white;
+  border-radius: 25px;   
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 60px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between; 
+ 
+}
+
+.resultado{
+  width: 30%;
+  height: 60vh;
+  background-color: white;
+  border-radius: 25px;
+  justify-content: center;
+  text-align: center; 
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; 
+  padding-top: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between; 
+  }
+
+
+  @media (max-width: 768px) {
+    .mensaje, .resultado {
+      width: 100%; /* En pantallas más pequeñas, ocupa el 100% del ancho */
+    }
+  }
+  
+  .texto, .resultado2 {
+    width: 95%;
+    height: 80%;
+    left: 3%;
+    top: 10%;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vh;
+    line-height: 150%;
+    background-color: white;
+    
+  }
+  
+  .checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 50%;
+    transform: translateX(20%);
+    margin-bottom: 15px;
+  }
+ 
+  .texto:focus, .texto:active, .resultado2:focus, .resultado2:active {
+    border: none;
+    outline: none;
+    }
+  
+    
+    .btn-encriptar {
+      align-items: center;
+      justify-content: center;
+      padding: 1%;
+      width: 100px;
+      height: 30px;
+      background-color: #0a3871;
+      border-radius: 24px;
+      font-family: "Inter";
+      font-size: 18px;
+      line-height: 19px;
+      text-align: center;
+      color: #fff;      
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .btn-desencriptar {
+      align-items: center;
+      justify-content: center;
+      padding: 1%;
+      width: 120px;
+      height: 30px;
+      background-color: #0a3871;
+      border-radius: 24px;
+      font-family: "Inter";
+      font-size: 18px;
+      line-height: 19px;
+      text-align: center;
+      color: #fff;      
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .copyright{
+      color:#FFFFFF;
+        font-size: 13px;
+        margin:20px;
+      }
+      
+    .btn-desencriptar:active,
+  .btn-desencriptar:focus
+  .btn-desencriptar:hover {
+            background-color: #2980b9;            
+  }
+  .btn-encriptar:active,
+  .btn-encriptar:focus
+  .btn-encriptar:hover {
+            background-color: #2980b9;            
+  }
+

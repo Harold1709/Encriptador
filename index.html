@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> 
+
+<body>
+
+    <header>
+        <div class="caja">
+            <h1><img class="imagen1" src="imagenes/mr.png"></h1>
+        </div>
+    </header>
+
+
+        <div class="contenedor">
+            <div class="mensaje">
+                <textarea name="texto"  class="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>            
+                
+                <div class="checkbox-container">
+                <button class="btn-encriptar" type="button" onclick="reemplazarLetras()">Encriptar</button>
+                <input type="checkbox" class="checkboxCopiar1" id="checkboxCopiar1" onchange="copiarTexto1()">
+                <label for="checkboxCopiar1">Copiar</label>
+                </div>
+            </div>
+    
+            <div class="resultado">
+                <textarea name="resultado2"  class="resultado2" id="resultado2" cols="30" rows="10" placeholder="Esperando a desencriptar"></textarea>
+                
+                <div class="checkbox-container">
+                <button class="btn-desencriptar" type="button" onclick="reemplazarLetras2()">Desencriptar</button>
+                <input type="checkbox" class="checkboxCopiar1" id="checkboxCopiar1" onchange="copiarTexto2()">
+                <label for="checkboxCopiar1">Copiar</label>
+                </div> 
+            </div>
+    
+            
+        </div>
+   
+    
+<footer>
+    <p class="copyright">&copy Copyright Encriptador Harold Montano - 2024</p>
+</footer>
+
+</body>
+<script src="codigo.js"></script>
+</html>
